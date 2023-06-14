@@ -2,35 +2,48 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 extension AppTheme on ThemeData {
-  Color get kwInfoSnackBarBackground => brightness == Brightness.light ? const Color(0xFF006FFD) : const Color(0xFF006FFD);
-
-  Color get kwWarningSnackBarBackground => brightness == Brightness.light ? const Color(0xFFF2C94C) : const Color(0xFFF2C94C);
-
-  Color get kwSuccessSnackBarBackground => brightness == Brightness.light ? const Color(0xFF6FCF97) : const Color(0xFF6FCF97);
-
-  Color get kwErrorSnackBarBackground => brightness == Brightness.light ? const Color(0xFFF14B4B) : const Color(0xFFF14B4B);
-
-  Color get kwSplashColor => brightness == Brightness.light ? const Color(0xff626873) : const Color(0xff626873);
-
-  Color get kwScaffoldBackgroundColor => brightness == Brightness.light ? const Color(0xff626873) : const Color(0xff626873);
-
-  Color get kwCanvasColor => brightness == Brightness.light ? const Color(0xFFE7C279) : const Color(0xFFE7C279);
-
-  Color get kwPrimaryColor => brightness == Brightness.light ? const Color(0xFF0D1C31) : const Color(0xFF0D1C31);
-
-  Color get kwBackgroundColor => brightness == Brightness.light ? const Color(0xff626873) : const Color(0xff626873);
-
-  Color get kwProgressIndicatorColor => brightness == Brightness.light ? const Color(0xFF507598) : const Color(0xFF507598);
-
-  Color get kwTextColor => brightness == Brightness.light ? const Color(0xFF000000) : const Color(0xFFFFFFFF);
-
-  Color get kwAppBarColor => brightness == Brightness.light ? const Color(0xFF0D1C31) : const Color(0xFF0D1C31);
-
-  Color get kwStatusBarColor => brightness == Brightness.light ? const Color(0xFF6CA4CB) : const Color(0xFF6CA4CB);
-
-  Color get kwFloatingActionButtonBackgroundColor => brightness == Brightness.light ? const Color(0xFF663E98) : const Color(0xFF663E98);
-
-  Color get kwIconColor => brightness == Brightness.light ? const Color(0xFF663E98) : const Color(0xFF663E98);
+  Color get corePrimary => brightness == Brightness.light ? const Color(0xFF1EA6D9) : const Color(0xFF1EA6D9);
+  Color get corePrimary100 => brightness == Brightness.light ? const Color(0xFFB3E1F3) : const Color(0xFFB3E1F3);
+  Color get corePrimary200 => brightness == Brightness.light ? const Color(0xFF9AD7EF) : const Color(0xFF9AD7EF);
+  Color get corePrimary300 => brightness == Brightness.light ? const Color(0xFF81CDEA) : const Color(0xFF81CDEA);
+  Color get corePrimary400 => brightness == Brightness.light ? const Color(0xFF68C4E6) : const Color(0xFF68C4E6);
+  Color get corePrimary500 => brightness == Brightness.light ? const Color(0xFF50BAE1) : const Color(0xFF50BAE1);
+  Color get corePrimary600 => brightness == Brightness.light ? const Color(0xFF37B0DD) : const Color(0xFF37B0DD);
+  Color get coreSecondary => brightness == Brightness.light ? const Color(0xFFDA9510) : const Color(0xFFDA9510);
+  Color get coreSecondary100 => brightness == Brightness.light ? const Color(0xFFF5F0E4) : const Color(0xFFF5F0E4);
+  Color get coreSecondary200 => brightness == Brightness.light ? const Color(0xFFF0E1C0) : const Color(0xFFF0E1C0);
+  Color get coreSecondary300 => brightness == Brightness.light ? const Color(0xFFECD29D) : const Color(0xFFECD29D);
+  Color get coreSecondary400 => brightness == Brightness.light ? const Color(0xFFE7C279) : const Color(0xFFE7C279);
+  Color get coreSecondary500 => brightness == Brightness.light ? const Color(0xFFE3B355) : const Color(0xFFE3B355);
+  Color get coreSecondary600 => brightness == Brightness.light ? const Color(0xFFDEA433) : const Color(0xFFDEA433);
+  Color get coreTertiary => brightness == Brightness.light ? const Color(0xFF663E98) : const Color(0xFF663E98);
+  Color get coreTertiary100 => brightness == Brightness.light ? const Color(0xFFD2CDE8) : const Color(0xFFD2CDE8);
+  Color get coreTertiary200 => brightness == Brightness.light ? const Color(0xFFC0B5DB) : const Color(0xFFC0B5DB);
+  Color get coreTertiary300 => brightness == Brightness.light ? const Color(0xFFAE9DCD) : const Color(0xFFAE9DCD);
+  Color get coreTertiary400 => brightness == Brightness.light ? const Color(0xFF9C86C0) : const Color(0xFF9C86C0);
+  Color get coreTertiary500 => brightness == Brightness.light ? const Color(0xFF8A6EB3) : const Color(0xFF8A6EB3);
+  Color get coreTertiary600 => brightness == Brightness.light ? const Color(0xFF7856A5) : const Color(0xFF7856A5);
+  Color get coreBase => brightness == Brightness.light ? const Color(0xFF0D0F19) : const Color(0xFF0D0F19);
+  Color get coreBase100 => brightness == Brightness.light ? const Color(0xFF0F54A6) : const Color(0xFF0F54A6);
+  Color get coreBase200 => brightness == Brightness.light ? const Color(0xFF0D498E) : const Color(0xFF0D498E);
+  Color get coreBase300 => brightness == Brightness.light ? const Color(0xFF0D3E77) : const Color(0xFF0D3E77);
+  Color get coreBase400 => brightness == Brightness.light ? const Color(0xFF0D325F) : const Color(0xFF0D325F);
+  Color get coreBase500 => brightness == Brightness.light ? const Color(0xFF0D2749) : const Color(0xFF0D2749);
+  Color get coreBase600 => brightness == Brightness.light ? const Color(0xFF0D1C31) : const Color(0xFF0D1C31);
+  Color get coreSuccess => brightness == Brightness.light ? const Color(0xFF5DB242) : const Color(0xFF5DB242);
+  Color get coreSuccess100 => brightness == Brightness.light ? const Color(0xFFCFF2C3) : const Color(0xFFCFF2C3);
+  Color get coreSuccess200 => brightness == Brightness.light ? const Color(0xFFBCE8AD) : const Color(0xFFBCE8AD);
+  Color get coreSuccess300 => brightness == Brightness.light ? const Color(0xFFA9DD98) : const Color(0xFFA9DD98);
+  Color get coreSuccess400 => brightness == Brightness.light ? const Color(0xFF96D282) : const Color(0xFF96D282);
+  Color get coreSuccess500 => brightness == Brightness.light ? const Color(0xFF83C76D) : const Color(0xFF83C76D);
+  Color get coreSuccess600 => brightness == Brightness.light ? const Color(0xFF70BD57) : const Color(0xFF70BD57);
+  Color get coreDanger => brightness == Brightness.light ? const Color(0xFFF64423) : const Color(0xFFF64423);
+  Color get coreDanger100 => brightness == Brightness.light ? const Color(0xFFFFC8BE) : const Color(0xFFFFC8BE);
+  Color get coreDanger200 => brightness == Brightness.light ? const Color(0xFFFDB2A4) : const Color(0xFFFDB2A4);
+  Color get coreDanger300 => brightness == Brightness.light ? const Color(0xFFFC9C8A) : const Color(0xFFFC9C8A);
+  Color get coreDanger400 => brightness == Brightness.light ? const Color(0xFFFA8670) : const Color(0xFFFA8670);
+  Color get coreDanger500 => brightness == Brightness.light ? const Color(0xFFF97057) : const Color(0xFFF97057);
+  Color get coreDanger600 => brightness == Brightness.light ? const Color(0xFFF75A3D) : const Color(0xFFF75A3D);
 
   Brightness get statusBarIconBrightness => brightness == Brightness.light ? Brightness.dark : Brightness.light;
 
@@ -40,25 +53,25 @@ extension AppTheme on ThemeData {
     String fontFamily = 'Inter';
     return brightness == Brightness.light
         ? copyWith(
-            scaffoldBackgroundColor: kwScaffoldBackgroundColor,
-            splashColor: kwSplashColor,
-            canvasColor: kwCanvasColor,
-            primaryColor: kwPrimaryColor,
-            backgroundColor: kwBackgroundColor,
+            scaffoldBackgroundColor: coreBase,
+            splashColor: coreBase500,
+            canvasColor: coreBase500,
+            primaryColor: corePrimary,
+            backgroundColor: coreBase,
             // primaryColor: Colors.grey.shade900,
             progressIndicatorTheme: progressIndicatorTheme.copyWith(
-              color: kwProgressIndicatorColor,
+              color: coreTertiary500,
             ),
-            textTheme: languageCode == 'en' ? _getDefaultTextTheme(kwTextColor, fontFamily) : _getDefaultPersianTextTheme(kwTextColor, fontFamily),
+            textTheme: languageCode == 'en' ? _getDefaultTextTheme(corePrimary100, fontFamily) : _getDefaultPersianTextTheme(corePrimary100, fontFamily),
             appBarTheme: AppBarTheme(
               elevation: 0,
-              color: kwAppBarColor,
-              systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: kwStatusBarColor),
+              color: coreBase600,
+              systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: coreBase600),
             ),
             floatingActionButtonTheme: floatingActionButtonTheme.copyWith(
-              backgroundColor: kwFloatingActionButtonBackgroundColor,
+              backgroundColor: coreBase100,
             ),
-            iconTheme: iconTheme.copyWith(color: kwIconColor),
+            iconTheme: iconTheme.copyWith(color: corePrimary100),
             elevatedButtonTheme: ElevatedButtonThemeData(
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
@@ -67,25 +80,25 @@ extension AppTheme on ThemeData {
             ),
           )
         : copyWith(
-            scaffoldBackgroundColor: kwScaffoldBackgroundColor,
-            splashColor: kwSplashColor,
-            canvasColor: kwCanvasColor,
-            primaryColor: kwPrimaryColor,
-            backgroundColor: kwBackgroundColor,
+            scaffoldBackgroundColor: coreBase,
+            splashColor: coreBase500,
+            canvasColor: coreBase500,
+            primaryColor: corePrimary,
+            backgroundColor: coreBase,
             // primaryColor: Colors.grey.shade900,
             progressIndicatorTheme: progressIndicatorTheme.copyWith(
-              color: kwProgressIndicatorColor,
+              color: coreTertiary500,
             ),
-            textTheme: languageCode == 'en' ? _getDefaultTextTheme(kwTextColor, fontFamily) : _getDefaultPersianTextTheme(kwTextColor, fontFamily),
+            textTheme: languageCode == 'en' ? _getDefaultTextTheme(corePrimary100, fontFamily) : _getDefaultPersianTextTheme(corePrimary100, fontFamily),
             appBarTheme: AppBarTheme(
               elevation: 0,
-              color: kwAppBarColor,
-              systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: kwStatusBarColor),
+              color: coreBase600,
+              systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: coreBase600),
             ),
             floatingActionButtonTheme: floatingActionButtonTheme.copyWith(
-              backgroundColor: kwFloatingActionButtonBackgroundColor,
+              backgroundColor: coreBase100,
             ),
-            iconTheme: iconTheme.copyWith(color: kwIconColor),
+            iconTheme: iconTheme.copyWith(color: corePrimary100),
             elevatedButtonTheme: ElevatedButtonThemeData(
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
