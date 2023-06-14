@@ -22,16 +22,15 @@ import '../../base/data/local/data_sources/token/token_local_data_source_impl.da
     as _i9;
 import '../../base/data/repositories/token/token_repository_impl.dart' as _i11;
 import '../../base/domain/repositories/token/token_repository.dart' as _i10;
-import '../../base/domain/usecase/token/has_token_use_case.dart' as _i14;
-import '../../base/domain/usecase/token/read_token_use_case.dart' as _i15;
-import '../../base/domain/usecase/token/remove_token_use_case.dart' as _i16;
-import '../../base/domain/usecase/token/save_token_use_case.dart' as _i17;
-import '../../base/domain/usecase/token/update_token_use_case.dart' as _i12;
-import '../../base/domain/usecase/token/user_from_token_use_case.dart' as _i13;
+import '../../base/domain/usecase/token/has_token_use_case.dart' as _i13;
+import '../../base/domain/usecase/token/read_token_use_case.dart' as _i14;
+import '../../base/domain/usecase/token/remove_token_use_case.dart' as _i15;
+import '../../base/domain/usecase/token/save_token_use_case.dart' as _i16;
+import '../../base/domain/usecase/token/user_from_token_use_case.dart' as _i12;
 import '../../service/language_theme/language_theme_cubit.dart' as _i7;
 import '../../service/network/interceptors/pretty_dio_logger.dart' as _i6;
-import '../local/di/local_module.dart' as _i19;
-import '../network/di/network_module.dart' as _i18;
+import '../local/di/local_module.dart' as _i18;
+import '../network/di/network_module.dart' as _i17;
 
 // ignore_for_file: unnecessary_lambdas
 // ignore_for_file: lines_longer_than_80_chars
@@ -58,21 +57,19 @@ _i1.GetIt $initGetItCore(
       () => _i9.TokenLocalDataSourceImpl());
   gh.lazySingleton<_i10.TokenRepository>(
       () => _i11.TokenRepositoryImpl(gh<_i8.TokenLocalDataSource>()));
-  gh.lazySingleton<_i12.UpdateTokenUseCase>(
-      () => _i12.UpdateTokenUseCase(gh<_i10.TokenRepository>()));
-  gh.lazySingleton<_i13.UserFromTokenUseCase>(
-      () => _i13.UserFromTokenUseCase(gh<_i10.TokenRepository>()));
-  gh.lazySingleton<_i14.HasTokenUseCase>(
-      () => _i14.HasTokenUseCase(gh<_i10.TokenRepository>()));
-  gh.lazySingleton<_i15.ReadTokenUseCase>(
-      () => _i15.ReadTokenUseCase(gh<_i10.TokenRepository>()));
-  gh.lazySingleton<_i16.RemoveTokenUseCase>(
-      () => _i16.RemoveTokenUseCase(gh<_i10.TokenRepository>()));
-  gh.lazySingleton<_i17.SaveTokenUseCase>(
-      () => _i17.SaveTokenUseCase(gh<_i10.TokenRepository>()));
+  gh.lazySingleton<_i12.UserFromTokenUseCase>(
+      () => _i12.UserFromTokenUseCase(gh<_i10.TokenRepository>()));
+  gh.lazySingleton<_i13.HasTokenUseCase>(
+      () => _i13.HasTokenUseCase(gh<_i10.TokenRepository>()));
+  gh.lazySingleton<_i14.ReadTokenUseCase>(
+      () => _i14.ReadTokenUseCase(gh<_i10.TokenRepository>()));
+  gh.lazySingleton<_i15.RemoveTokenUseCase>(
+      () => _i15.RemoveTokenUseCase(gh<_i10.TokenRepository>()));
+  gh.lazySingleton<_i16.SaveTokenUseCase>(
+      () => _i16.SaveTokenUseCase(gh<_i10.TokenRepository>()));
   return getIt;
 }
 
-class _$NetworkModule extends _i18.NetworkModule {}
+class _$NetworkModule extends _i17.NetworkModule {}
 
-class _$LocalModule extends _i19.LocalModule {}
+class _$LocalModule extends _i18.LocalModule {}

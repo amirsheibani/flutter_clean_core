@@ -23,7 +23,6 @@ export 'package:flutter_clean_core/core/base/domain/usecase/token/has_token_use_
 export 'package:flutter_clean_core/core/base/domain/usecase/token/read_token_use_case.dart';
 export 'package:flutter_clean_core/core/base/domain/usecase/token/remove_token_use_case.dart';
 export 'package:flutter_clean_core/core/base/domain/usecase/token/save_token_use_case.dart';
-export 'package:flutter_clean_core/core/base/domain/usecase/token/update_token_use_case.dart';
 export 'package:flutter_clean_core/core/base/domain/usecase/token/user_from_token_use_case.dart';
 export 'package:flutter_clean_core/core/di/base/di_setup.dart';
 export 'package:flutter_clean_core/core/di/local/di/local_module.dart';
