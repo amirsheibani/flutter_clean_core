@@ -46,7 +46,13 @@ extension AppTheme on ThemeData {
   Color get coreDanger400 => brightness == Brightness.light ? const Color(0xFFFA8670) : const Color(0xFFFA8670);
   Color get coreDanger500 => brightness == Brightness.light ? const Color(0xFFF97057) : const Color(0xFFF97057);
   Color get coreDanger600 => brightness == Brightness.light ? const Color(0xFFF75A3D) : const Color(0xFFF75A3D);
-
+  Color get coreDisable => brightness == Brightness.light ? const Color(0xFF6D7278) : const Color(0xFF6D7278);
+  Color get coreDisable100 => brightness == Brightness.light ? const Color(0xFFC8D1DD) : const Color(0xFFC8D1DD);
+  Color get coreDisable200 => brightness == Brightness.light ? const Color(0xFFA7AEB7) : const Color(0xFFA7AEB7);
+  Color get coreDisable300 => brightness == Brightness.light ? const Color(0xFF989EA5) : const Color(0xFF989EA5);
+  Color get coreDisable400 => brightness == Brightness.light ? const Color(0xFF898E95) : const Color(0xFF898E95);
+  Color get coreDisable500 => brightness == Brightness.light ? const Color(0xFF7F858C) : const Color(0xFF7F858C);
+  Color get coreDisable600 => brightness == Brightness.light ? const Color(0xFF777D84) : const Color(0xFF777D84);
   Brightness get statusBarIconBrightness => brightness == Brightness.light ? Brightness.dark : Brightness.light;
 
   Brightness get statusBarIconBrightnessNot => brightness == Brightness.light ? Brightness.light : Brightness.dark;
