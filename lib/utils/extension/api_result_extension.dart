@@ -4,7 +4,7 @@ import 'package:flutter_clean_core/core/service/network/network_state/api_result
 import 'network_exceptions.dart';
 
 extension ErrorApiResultExtension on Object {
-  Result<T> toResult<T>(StackTrace? stackTrace) {
+  Result<T> toResult<T>({StackTrace? stackTrace}) {
     final error = NetworkExceptions.getDioException(this, stackTrace);
     final str = NetworkExceptions.getErrorMessage(error ?? const NetworkExceptions.unexpectedError());
     return Result.failure(message: str);

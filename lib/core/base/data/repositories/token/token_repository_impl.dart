@@ -19,7 +19,7 @@ class TokenRepositoryImpl extends TokenRepository {
       final TokenEntity? data = result.data?.mapper();
       return Result.success(data: data, message: result.message);
     } catch (e, s) {
-      return e.toResult(s);
+      return e.toResult(stackTrace: s);
     }
   }
 
@@ -29,7 +29,7 @@ class TokenRepositoryImpl extends TokenRepository {
       final result = await _localDataSource.removeToken();
       return Result.success(data: result.data ?? false, message: result.message);
     } catch (e, s) {
-      return e.toResult(s);
+      return e.toResult(stackTrace: s);
     }
   }
 
@@ -39,7 +39,7 @@ class TokenRepositoryImpl extends TokenRepository {
       final result = await _localDataSource.saveToken(tokenEntity.mapper());
       return Result.success(data: result.data, message: result.message);
     } catch (e, s) {
-      return e.toResult(s);
+      return e.toResult(stackTrace: s);
     }
   }
 
@@ -54,7 +54,7 @@ class TokenRepositoryImpl extends TokenRepository {
         throw (Exception('can not remove token'));
       }
     } catch (e, s) {
-      return e.toResult(s);
+      return e.toResult(stackTrace: s);
     }
   }
 
@@ -65,7 +65,7 @@ class TokenRepositoryImpl extends TokenRepository {
       final TokenEntity? data = result.data?.mapper();
       return Result.success(data: data?.accessToken != null, message: result.message);
     } catch (e, s) {
-      return e.toResult(s);
+      return e.toResult(stackTrace: s);
     }
   }
 }
