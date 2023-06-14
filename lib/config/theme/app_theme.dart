@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 extension AppTheme on ThemeData {
+  Color get coreBackground => brightness == Brightness.light ? const Color(0xFF212939) : const Color(0xFF212939);
+
   Color get corePrimary => brightness == Brightness.light ? const Color(0xFF1EA6D9) : const Color(0xFF1EA6D9);
   Color get corePrimary100 => brightness == Brightness.light ? const Color(0xFFB3E1F3) : const Color(0xFFB3E1F3);
   Color get corePrimary200 => brightness == Brightness.light ? const Color(0xFF9AD7EF) : const Color(0xFF9AD7EF);
@@ -53,11 +55,11 @@ extension AppTheme on ThemeData {
     String fontFamily = 'Inter';
     return brightness == Brightness.light
         ? copyWith(
-            scaffoldBackgroundColor: coreBase,
+            scaffoldBackgroundColor: coreBackground,
             splashColor: coreBase500,
             canvasColor: coreBase500,
             primaryColor: corePrimary,
-            backgroundColor: coreBase,
+            backgroundColor: coreBackground,
             // primaryColor: Colors.grey.shade900,
             progressIndicatorTheme: progressIndicatorTheme.copyWith(
               color: coreTertiary500,
@@ -80,11 +82,11 @@ extension AppTheme on ThemeData {
             ),
           )
         : copyWith(
-            scaffoldBackgroundColor: coreBase,
+            scaffoldBackgroundColor: coreBackground,
             splashColor: coreBase500,
             canvasColor: coreBase500,
             primaryColor: corePrimary,
-            backgroundColor: coreBase,
+            backgroundColor: coreBackground,
             // primaryColor: Colors.grey.shade900,
             progressIndicatorTheme: progressIndicatorTheme.copyWith(
               color: coreTertiary500,
