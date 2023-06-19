@@ -13,7 +13,7 @@ extension ErrorApiResultExtension on Object {
       final error = NetworkExceptions.getDioException(this, stackTrace);
       message = NetworkExceptions.getErrorMessage(error ?? const NetworkExceptions.unexpectedError());
     } else if (this is SocketException) {
-      message = stackTrace.toString();
+      message = stackTrace?.toString() ?? toString();
     }
     return Result.failure(message: message);
   }
